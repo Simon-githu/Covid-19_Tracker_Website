@@ -1,0 +1,141 @@
+/* statistics section styling */
+
+.statistics .title::after {
+    content: "Covid-19 stats";
+    background: #000;
+  }
+  .statistics .title::before {
+    
+    background: #fff;
+  }
+ 
+  .statistics{
+    color:#fff;
+    background: #000;
+  }
+  .statistics .statistics-content{
+    display: flex;
+    justify-content: space-evenly;
+  }
+ 
+  .statistics .statistics-content .column  {
+    width: calc(40% - 90px);
+   
+  }
+
+  .statistics .statistics-content .left .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .statistics .statistics-content .left p {
+    text-align: justify;
+  }
+  .statistics .statistics-content .left a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+  }
+  .statistics .statistics-content .left a:hover {
+    color: crimson;
+    background: none;
+  }
+  .statistics .statistics-content .right .bars {
+    margin-bottom: 15px;
+  }
+  .statistics .statistics-content .right .info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+  }
+.statistics .statistics-content .right {
+ flex:0.9;
+
+}
+.statistics .statistics-content .left {
+ position: relative;
+ left:200px;
+ bottom:50px
+}
+.table-card{
+background: #222;
+color: white;
+}
+
+.panel.mat-select-panel {
+  color: #fff;
+}
+mat-form-field{
+ 
+}
+mat-label{
+  position: relative;
+  top:5px
+}
+::ng-deep .mat-select-value{    
+  color: white!important;  
+}
+  ::ng-deep .mat-select-arrow {
+    color:white !important;
+  }
+  ::ng-deep .mat-select-placeholder{
+
+    color:red;
+  }
+.mat-select {
+  width: 310px !important;
+  background: crimson;
+  border-radius: 10px;
+  padding: 15px;
+}
+@media (max-width: 947px){
+  .statistics .statistics-content .right{
+    position: relative;
+    bottom: 0px;
+   
+  }
+  .statistics .statistics-content .left{
+    position: relative;
+    bottom: 0px;
+   left:0px
+  }
+}
+@media (max-width: 320px) {
+  .statistics .title::after{
+     
+      font-size: 15px;
+    }
+    .mat-select {
+      width: 270px !important;
+      background: crimson;
+      border-radius: 10px;
+      padding: 15px;
+    }
+}
+@media (max-width: 280px) {
+  .statistics .title::after{
+     
+      font-size: 15px;
+    }
+    .mat-select {
+      width: 230px !important;
+      background: crimson;
+      border-radius: 10px;
+      padding: 15px;
+    }
+}
+@media screen and (device-width: 1024px) and (device-height: 1366px){
+
+ .table-card{
+   position: relative;
+   right: 110px;
+ }
+  }

@@ -1,0 +1,23 @@
+<!-- Card with campus statistics -->
+  <div class="cards"  data-aos="zoom-in-down" data-aos-duration="2000">
+    
+      <!-- Card with covid-19 country cases stat(updates of covid-19 number cases) -->
+    <mat-card class="stats-box-cases" (click)="getCases()" [ngStyle]="{ 'border-top':casesActive? '5px solid #1947c5' : '#222'}">
+            <mat-card-content class="stats-title">Cases</mat-card-content>
+            <mat-card-title class="stats-cases"  [ngStyle]="{ 'color':casesActive? '#1947c5' : '#fff'}">+{{show?CountryTodayCases:WorldTodayCases}}</mat-card-title>
+            <mat-card-content class="stats-total" >{{show?CountryCases:WorldCases}} Total</mat-card-content>
+    </mat-card>
+    <!-- Card with covid-19 country deaths stats(updates of covid-19 number deaths) -->
+    <mat-card class="stats-box-deaths" (click)="getDeaths()" [ngStyle]="{ 'border-top':deathsActive? '5px solid red' : '#222'}">
+        <mat-card-content class="stats-title">Deaths</mat-card-content>
+        <mat-card-title class="stats-cases" [ngStyle]="{ 'color':deathsActive? 'red' : '#fff'}">+{{show?CountryTodayDeaths:WorldTodayDeaths}}</mat-card-title>
+        <mat-card-content class="stats-total" >{{show?CountryDeaths:WorldDeaths}} Total</mat-card-content>
+    </mat-card>
+    <!-- Card with covid-19 country recovered stats(updates of covid-19 number recovered) -->
+    <mat-card class="stats-box-recovered" (click)="getRecovered()" [ngStyle]="{ 'border-top':recoveredActive? '5px solid #19c519' : '#222'}">
+        <mat-card-content class="stats-title">Recovered</mat-card-content>
+        <mat-card-title class="stats-cases"  [ngStyle]="{ 'color':recoveredActive? '#19c519' : '#fff'}">+{{show?CountryTodayRecovered:WorldTodayRecovered}}</mat-card-title>
+        <mat-card-content class="stats-total" >{{show?CountryRecovered:WorldRecovered}} Total</mat-card-content>
+     
+    </mat-card>
+</div>

@@ -1,0 +1,36 @@
+<!-- #symptoms basic-panel -->
+<mat-accordion>
+    <mat-expansion-panel
+      (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false"
+      (click)="panel()"
+      hideToggle
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title> Symptoms </mat-panel-title>
+        <mat-panel-description>
+          click to {{ panelOpenState ? "close symptoms" : "read symptoms" }}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      <ul>
+          <span><b>Common Symptoms</b></span>
+        <li>Fever</li>
+        <li>Dry Cough</li>
+        <li>Tiredness</li>
+        
+        <span><b>Less Common Symptoms</b></span>
+        <li>Aches and Pains</li>
+        <li>Sore Throat</li>
+        <li>Headeche</li>
+        
+
+         
+        <span><b>Serious Symptoms</b></span>
+        <li>Difficulty breathing or shortness of breath</li>
+        <li>Chest pain or pressure</li>
+        <li>Loss of speech or movement</li>
+      </ul>
+    </mat-expansion-panel>
+  </mat-accordion>
+  

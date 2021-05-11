@@ -1,0 +1,37 @@
+<!-- statistics section start -->
+<section class="statistics" id="statistics">
+  <div class="max-width">
+    <h2 class="title">Statistics</h2>
+    <div class="statistics-content">
+      <!-- Left side -->
+      <div class="column right">
+        <div class="dropdown" >
+          <mat-form-field>
+            <mat-select [formControl]="worldWide"  panelClass="panel">
+              <mat-option [value]="WorldWide">Worldwide</mat-option>
+              <mat-option *ngFor="let country of DropDownCountries" [(value)]="country.value">
+                {{ country.name }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <!-- Imported statistics cards component that recieves covid-19 data of a country and the world and also recieves a boolean variable -->
+        <app-stats-box [CountryData]="Country" [WorldData]="World" [show]="showData" (CaseType)="CaseType($event)"></app-stats-box>
+        <!-- Imported map component -->
+        <app-map [latitude]="lat" [longitude]="long" [Country]="selectedCountry" [Countries]="Countries" [ResetMap]="showData" [Type]="Type"></app-map>
+      </div>
+
+      <!-- Right side -->
+      <div class="column left" 
+      >
+        <mat-card class="table-card" data-aos="zoom-in" data-aos-duration="2000">
+          <mat-card-content class="stats-total">Live Cases Of All Countries</mat-card-content>
+          <!-- Imported Statistics Table component that recieves covid-19 data of all countries  -->
+          <app-stats-table [CountriesData]="Countries"></app-stats-table>
+          <app-stats-graph></app-stats-graph>
+        </mat-card>
+        <!-- <a href="#">Read more</a> -->
+      </div>
+    </div>
+  </div>
+</section>

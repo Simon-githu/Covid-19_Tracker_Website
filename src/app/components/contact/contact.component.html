@@ -1,0 +1,81 @@
+<!-- contact section start -->
+<section class="contact" id="contact">
+    <div class="max-width">
+        <h2 class="title">Contact Me</h2>
+        <div class="contact-content">
+            <div class="column left">
+                <div class="text">Get in Touch</div>
+                <div class="icons">
+                    <div class="row">
+                        <i class="fas fa-user"></i>
+                        <div class="info">
+                            <div class="head">Name</div>
+                            <div class="sub-title">Simon Baloi</div>
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info">
+                            <div class="head">Address</div>
+                            <div class="sub-title">Lotus Gardens</div>
+                            <div class="sub-title"> Pretoria, 0008</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="info">
+                            <div class="head">Tel</div>
+                            <div class="sub-title">081 475 4456 </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <div class="head">Email</div>
+                            <div class="sub-title">SIMONBALOI97@GMAIL.COM</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column right">
+                <div class="text">Message Me</div>
+                <form [formGroup]="contactForm" >
+                    <div class="field">
+                        <mat-form-field appearance="outline" >
+                            <mat-label>Name</mat-label>
+                            <input matInput  formControlName="name" placeholder="Enter your name..." >
+                            <mat-error *ngIf="contactForm.get('name').hasError('required')">Your Name is required</mat-error>
+                          </mat-form-field>
+                          <mat-form-field appearance="outline">
+                            <mat-label>Email</mat-label>
+                            <input matInput  formControlName="email" placeholder="email@example.com"  >
+                            <mat-error *ngIf="contactForm.get('email').hasError('required')">Your Email Address is required</mat-error>
+                            <mat-error *ngIf="contactForm.get('email').hasError('email')">Please provide a valid email address</mat-error>
+                          </mat-form-field>
+                    </div>
+                    <div class="fields"> 
+                    <mat-form-field appearance="outline" >
+                        <mat-label>Subject</mat-label>
+                        <input matInput   formControlName="subject" placeholder="Enter subject..." >
+                        <mat-error *ngIf="contactForm.get('subject').hasError('required')">Subject is required</mat-error>
+                      </mat-form-field>
+                     
+                     <mat-form-field appearance="outline">
+                            <mat-label>Message</mat-label>
+                            <textarea matInput  formControlName="message" placeholder="Enter your message..."></textarea>
+                            <mat-error *ngIf="contactForm.get('message').hasError('required')">Message is required </mat-error>
+                    </mat-form-field>
+                    </div>
+
+                    <div class="button" >
+                        <button  (click)="onSubmit()" *ngIf="contactForm.status ==='VALID'" >Send message</button>
+                        
+                    </div>
+                </form>
+               
+            </div>
+        </div>
+    </div>
+  </section>
+  

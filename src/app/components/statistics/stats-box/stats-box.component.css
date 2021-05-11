@@ -1,0 +1,51 @@
+.cards{
+    display: flex;
+    justify-content: space-between;
+ 
+  
+  }
+  .cards
+.stats-box-cases{
+    color:white;
+    background: #222;
+    border-top:5px solid #222;
+    cursor: pointer;
+}
+
+.stats-box-deaths{
+  cursor: pointer;
+  color:white;
+  background: #222;
+  border-top:5px solid #222;
+}
+.stats-box-recovered{
+  cursor: pointer;
+  color:white;
+  background: #222;
+  border-top:5px solid #222;
+ 
+}
+@media(max-width:991px){
+  .cards{
+    display: flex;
+    justify-content: space-around;
+  }
+  .stats-box-cases{
+    margin:1px
+  }
+  .stats-box-deaths{
+    margin:5px
+  }
+}
+@media(max-width:320px){
+ 
+  .stats-title{
+    font-size: 10px;
+  }
+  .stats-cases{
+    font-size: 15px;
+  }
+  .stats-total{
+    font-size: 12px;
+  }
+}

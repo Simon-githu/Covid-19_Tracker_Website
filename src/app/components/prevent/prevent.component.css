@@ -1,0 +1,118 @@
+/* prevent section styling */
+.prevent .title::after{
+    background: #111;
+      content: "how to prevent";
+    }
+    .prevent {
+      color: #fff;
+      background: #111;
+    }
+    
+    .prevent .title::before {
+      background: #fff;
+    }
+    
+   
+    .prevent .carousel .card{
+      background: #222;
+      border-radius: 6px;
+      padding: 25px 35px;
+      text-align: center;
+      transition: all 0.3s ease;
+    
+    }
+    .prevent .carousel .card .txt{
+      height:100px
+    
+    }
+    
+    .prevent .carousel .card:hover{
+      background-color: crimson;
+    }
+    .prevent .carousel .card .box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    .prevent .carousel .card:hover .box{
+      transform: scale(1.05);
+    }
+    .prevent .carousel .card .text{
+      font-size: 20px;
+      font-weight: 500;
+      margin: 10px 0 7px 0;
+    }
+  
+    .prevent .carousel .card img{
+      height: 150px;
+      width: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid crimson ;
+      transition: all 0.3s ease;
+      overflow-y: hidden;
+    }
+    .prevent .carousel .card:hover img{
+      border-color: #fff;
+    }
+    .fa{
+     visibility: hidden;
+     font-size:xx-large;
+     cursor: pointer;
+   
+    }
+    .fa:hover{
+     color:  #222;
+    }
+    .prevent .carousel .card:hover .fa{
+    visibility: visible;
+    }
+    .prevent .carousel .card .box a{
+    color: #fff;
+    }
+  
+    /* Responsive Media Query */
+    @media(max-width:500px){
+      .prevent .carousel .card .text{
+        font-size: 20px;
+      
+      }
+      
+    }
+    @media(max-width:500px){
+      .prevent .carousel .card .text{
+        font-size: 15px;
+       font-weight:bold;
+      }
+      .prevent .carousel .card .txt{
+        overflow: hidden;
+      
+      }
+    }
+    @media(max-width:1040px){
+      .prevent .carousel .card .text{
+        font-size: 15px;
+      font-weight:bold;
+      }
+      .prevent .carousel .card .txt{
+        overflow: hidden;
+      
+      }
+      .fa{
+        visibility: visible;
+        }
+    }
+   
+  @media (max-width: 947px){
+    .fa{
+      visibility: visible;
+      }
+  }
+  @media (max-width: 320px) {
+      .prevent .title::after{
+         
+          font-size: 15px;
+        }
+  }

@@ -1,0 +1,181 @@
+mat-dialog-content{
+    position:fixed;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .vid .popup video{
+    position: relative;
+    width: 75%;
+    outline: none;
+    box-shadow:0 0 10px rgba(255, 255, 255, 255);
+    top:10px
+  }
+  
+ 
+::ng-deep .mat-dialog-container {
+ overflow: hidden;
+  width: 950px;
+  height: 600px;
+  background:crimson;
+
+}
+.fas{
+  font-size:40px;
+ color:#222;
+ cursor: pointer;
+}
+
+.close{
+ cursor: pointer;
+  height:50px;
+  width:50px;
+  border-radius:50%;
+position:relative;
+background:crimson;
+align-items: center;
+justify-content: center;
+display:flex;
+left:420px;
+top:497px;
+
+}
+.close:hover{
+  background:#222
+}
+
+.close:hover .fas{
+  color:crimson
+}
+  @media (max-width: 947px){
+   
+    .vid .popup video{
+    position: relative;
+    top:10px;
+      width: 80%;
+      outline: none;
+      box-shadow:0 0 10px rgba(255, 255, 255, 255)
+    }
+    .close{
+   top:180px;
+   left:110px;
+   position: relative;
+   background:#222
+    }
+    .fas{
+      color:crimson
+    }
+    ::ng-deep .mat-dialog-container {
+      height: 400px !important;
+      position: relative;
+      top:-50px;
+      background:crimson;
+    
+  }
+}
+@media screen and (device-width: 360px) and (device-height:640px){
+  .close{
+    top:160px;
+    left:90px;
+    position: relative;
+   
+     }
+     ::ng-deep .mat-dialog-container {
+      height: 400px !important;
+      position: relative;
+      top:-15px;
+      background:crimson;
+    
+  }
+  
+}
+@media screen and (device-width: 1024px) and (device-height:1366px){
+        .vid .popup video{
+            width:86%
+        }
+        .close{
+          top:450px;
+          left:350px;
+          position: relative;
+          background:#222
+           }
+           .fas{
+            color:crimson
+          }
+    }
+    @media screen and (device-width: 768px) and (device-height:1024px){
+        .vid .popup video{
+          width: 85%;
+        }
+        ::ng-deep .mat-dialog-container {
+          height: 500px !important;
+          position: relative;
+          top:50px;
+          background:crimson;
+        
+      }
+      .close{
+        top:340px;
+        left:250px;
+        position: relative;
+       
+         }
+    }
+    @media screen and (device-width: 320px) and (device-height:568px){
+        .vid .popup video{
+          width: 80%;
+        }
+        ::ng-deep .mat-dialog-container {
+          height: 380px !important;
+          position: relative;
+          top:0px;
+          background:crimson;
+        
+      }
+      .close{
+        top:150px;
+        left:70px;
+        position: relative;
+       
+         }
+    }
+    @media screen and (device-width: 375px) and (device-height:667px){
+      .close{
+        top:170px;
+        left:98px;
+        position: relative;
+       
+         }
+    }
+    @media screen and (device-width: 375px) and (device-height:812px){
+      .close{
+        top:170px;
+        left:98px;
+        position: relative;
+       
+         }
+    }
+    @media screen and (device-width: 540px) and (device-height:720px){
+      .close{
+        top:230px;
+        left:160px;
+        position: relative;
+       
+         }
+    }
+    @media screen and (device-width: 280px) and (device-height:653px){
+      .close{
+        top:130px;
+        left:60px;
+        position: relative;
+       
+         }
+         ::ng-deep .mat-dialog-container {
+        
+          position: relative;
+          top:5px;
+         
+        
+      }
+    }

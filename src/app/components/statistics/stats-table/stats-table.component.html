@@ -1,0 +1,9 @@
+<!-- Campus Stats Table Start -->
+<div class="table" >
+  <tr *ngFor="let Country of CountriesData">
+    <td>{{ Country.country }}</td>
+    <td>
+      <span class="cases">{{ Country.cases|number }}</span>
+    </td>
+  </tr>
+</div>

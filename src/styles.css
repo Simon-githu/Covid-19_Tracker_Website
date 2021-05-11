@@ -1,1 +1,129 @@
 /* You can add global styles to this file, and also import other style files */
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import "../node_modules/leaflet/dist/leaflet.css";
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+ html{
+    scroll-behavior: smooth;
+} 
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.popup .leaflet-popup-content-wrapper{
+    background:#222;
+    color:#fff;
+    
+}
+/* all similar content styling codes */
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+    overflow:hidden ;
+}
+section{
+    padding: 100px 0;
+}
+
+
+.about, .services, .statistics, .prevent, .symptoms,.contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content, 
+.statistics .statistics-content,
+.symptoms .symptoms-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+  
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color:  crimson;
+    padding:0px 4px 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+ /* responsive media query start */
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+    .prevent .carousel .card .txt{
+        height:150px
+    }
+   
+}
+@media (max-width: 947px){
+    
+    .max-width{
+        max-width: 930px;
+    }
+    .statistics .statistics-content .column,
+    .symptoms .symptoms-content .column,
+    .contact .contact-content .column{
+        min-width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+  
+}
+@media (max-width: 500px) {
+    
+    .about .about-content .right .text,
+    .statistics .statistics-content .left .text{
+        font-size: 19px;
+    }
+    
+}
+

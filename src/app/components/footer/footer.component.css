@@ -1,0 +1,21 @@
+/* footer section styling */
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: #00b712;
+    text-decoration: none;
+    margin: 5px;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+ .far{
+    
+    overflow:hidden;
+    position:absolute;
+
+}

@@ -1,0 +1,192 @@
+/* symptoms section styling */
+.symptoms .title::after {
+    content: "what happens";
+  }
+ 
+  .symptoms .symptoms-content .column {
+    width: calc(50% - 30px);
+  }
+  .symptoms .symptoms-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  .symptoms .symptoms-content .left p {
+    text-align: justify;
+  }
+  .symptoms .symptoms-content .left p span {
+    font-weight: bold;
+  }
+  .symptoms .symptoms-content .left p a{
+    color:#009ffd;
+    text-decoration: underline;
+   
+  }
+  .symptoms .symptoms-content .left p a:hover{
+    color:deepskyblue;
+    
+    
+  }
+  .symptoms .symptoms-content .left .icons {
+    margin: 10px 0;
+  }
+  .symptoms .symptoms-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+  }
+  .symptoms .symptoms-content .row .info {
+    margin-left: 30px;
+  }
+  .symptoms .symptoms-content .row i {
+    font-size: 25px;
+    color: #009ffd;
+  }
+  .symptoms .symptoms-content .info .head {
+    font-weight: 500;
+  }
+  .symptoms .symptoms-content .info .sub-title {
+    color: #333;
+  }
+  .symptoms .right form .fields  {
+    display: flex;
+    flex-direction: row;
+  }
+  .symptoms .right form .fields .mat-form-field:nth-child(1) {
+    margin-right: 10px;
+      width: 100%;
+      }
+      .symptoms .right form .fields .mat-form-field:nth-child(2){
+        width:100%
+      }
+
+  
+  .symptoms .right form .name {
+    margin-right: 15px;
+  }
+  .symptoms .right form .email {
+    margin-left: 10px;
+  }
+  .symptoms .right form .field input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+    
+  }
+  /* this gets rid of the number input up and down icons */
+  /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+  .symptoms .right form .field input:focus {
+    border-color: #b3b3b3;
+  }
+  
+  .symptoms .right form .button {
+    height: 47px;
+    width: 170px;
+  }
+  .symptoms .right form .button button {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #009ffd;
+    background: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);;
+    color: #fff;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .symptoms .right form .button button:hover {
+    color: #009ffd;
+    background: none;
+  }
+  .symptoms .right form .example-additional-selection {
+    opacity: 0.75;
+    font-size: 0.75em;
+    color:#00b712;
+    
+  }
+  mat-form-field{
+    width: 540px;
+  }
+
+  mat-select-trigger{
+color: #000;
+  }
+  mat-label{
+    color: grey;
+  }
+  .panel.mat-select-panel {
+    color: red !important;
+  }
+
+::ng-deep .mat-select-panel mat-option.mat-option {
+  height: unset;
+  line-height: 1.2em;
+  padding-top: 0.9em;
+  padding-bottom: 0.9em;
+}
+
+::ng-deep .mat-option-text.mat-option-text {
+  white-space: normal;
+}
+  @media (max-width: 500px) {
+   
+    .symptoms .right form .fields{
+        flex-direction: column;
+    }
+    .symptoms .right form .name,
+    .symptoms .right form .email{
+        margin: 0px;
+    }
+  
+    ::ng-deep .mat-select-panel mat-option.mat-option {
+      height: unset;
+      line-height: 1.2em;
+      padding-top: 0.9em;
+      padding-bottom: 0.9em;
+    }
+   mat-label{
+  position: relative;
+  bottom:3.3px;
+     white-space: normal;
+    font-size: 15px;
+    }
+   
+}
+
+@media (max-width: 991px) {
+mat-form-field{
+  width: 100%;
+}
+}
+
+@media (max-width: 1104px) {
+    .symptoms .symptoms-content .right img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 320px) {
+    .symptoms .symptoms-content .right img{
+        height: 280px;
+        width: 250px;
+    }
+}

@@ -1,0 +1,109 @@
+
+.info-box1{
+   background:rgba(255,255,255,0.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    margin:10px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border-top:5px solid red;
+   
+   
+}
+.info-box2{
+   background:rgba(255,255,255,0.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    margin:10px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border-top:5px solid #19c519;
+  
+   
+}
+.info-box3{
+   background:rgba(255,255,255,0.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    margin:10px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border-top:5px solid #1947c5;
+    
+   
+}
+.info-box1:hover{
+    background: #d3494e;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 1s ease ;
+}
+.info-box2:hover{
+   background: #7eb26d;
+   cursor: pointer;
+   border-radius: 10px;
+   transition: all 1s ease ;
+}
+.info-box3:hover{
+   background: #2c6fbb;
+   cursor: pointer;
+   border-radius: 10px;
+   transition: all 1s ease ;
+}
+
+.infoBox:hover .textBox .text-1,.textBox.text-3{
+  color: grey;
+    cursor: pointer;
+}
+.infoBox:hover .text-3{
+    color: grey;
+      cursor: pointer;
+  }
+
+  .box{
+  
+     display:flex;
+     color:white;
+     margin-top:50px
+  }
+  .title-txt span{
+      color:crimson;
+     font-size: 40px;
+    font-weight: 600;
+   
+  }
+  @media (max-width: 1104px) {
+     
+  .box{
+
+   position: relative;
+   right:20px;
+}
+  }
+
+  @media screen and (device-width: 320px) and (device-height: 568px){
+   .info-box1,.info-box2,.info-box3{
+      margin:5px
+   }
+   .box{
+
+      position: relative;
+      right:25px;
+   }
+  
+}
+@media screen and (device-width: 280px) and (device-height: 653px){
+   .info-box1,.info-box2,.info-box3{
+      margin:2px;
+      
+   }
+   .info-box1 .info-title,.info-box2 .info-title,.info-box3 .info-title{
+      font-size: 10px;
+   }
+   .info-box1 .info-total,.info-box2 .info-total,.info-box3 .info-total{
+      font-size: 12px;
+   }
+   .box{
+
+      position: relative;
+      right:25px;
+   }
+  
+}

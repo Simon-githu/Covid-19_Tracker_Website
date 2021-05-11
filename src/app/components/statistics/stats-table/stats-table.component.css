@@ -1,0 +1,32 @@
+.table{
+    margin-top: 20px;
+    overflow: scroll;
+    height:400px;
+    color: white;
+    overflow-x: hidden;
+    
+}
+.cases{
+margin-right:70px
+}
+.table tr:nth-of-type(odd){
+    background: crimson;
+}
+
+.table tr{
+display: flex;
+justify-content: space-between;
+}
+.table td{
+    padding: 0.5rem;
+}
+@media (max-width: 947px){
+    .cases{
+        margin-right:0px
+        }
+}
+@media screen and (device-width: 1024px) and (device-height: 1366px){
+    .cases{
+        margin-right:0px
+        }
+}

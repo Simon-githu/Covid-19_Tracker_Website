@@ -1,0 +1,30 @@
+<!-- symptoms section start -->
+<section class="symptoms" id="symptoms">
+    <div class="max-width">
+      <h2 class="title">Symptoms</h2>
+      <div class="symptoms-content">
+        <div class="column left"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="900"
+        >
+          <!-- Imported disclaimer component with an output function that has panel state (open or close,true or false) -->
+          <app-types (getPanelOpenState)="getPanelOpenState($event)"></app-types>
+          <div class="text" *ngIf="!panelState">Note:</div>
+          <p *ngIf="!panelState">
+            COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization.
+            Seek immediate medical attention if you have serious symptoms. Always call before visiting your doctor or health facility.
+            On average it takes 5–6 days from when someone is infected with the virus for symptoms to show, however it can take up to 14 days.<span>To learn more visit </span><a
+              href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/coronavirus-disease-covid-19#:~:text=symptoms">WorldHealthOrganisation</a>
+          </p>
+        </div>
+        <div class="column right"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="900"
+        >
+         <img src="../../../assets/images/symptoms-img.png"/>
+        </div>
+      </div>
+    </div>
+  </section>

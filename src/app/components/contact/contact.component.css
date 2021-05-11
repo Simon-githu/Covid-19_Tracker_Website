@@ -1,0 +1,99 @@
+/* contact section styling */
+.contact .title::after {
+  content: "get in touch";
+}
+.contact .contact-content .column {
+  width: calc(50% - 30px);
+}
+.contact .contact-content .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact .contact-content .left p {
+  text-align: justify;
+}
+.contact .contact-content .left .icons {
+  margin: 10px 0;
+}
+.contact .contact-content .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.contact .contact-content .row .info {
+  margin-left: 30px;
+}
+.contact .contact-content .row i {
+  font-size: 25px;
+  color: crimson;
+}
+.contact .contact-content .info .head {
+  font-weight: 500;
+}
+.contact .contact-content .info .sub-title {
+  color: #333;
+}
+.contact .right form .field {
+  display: flex;
+}
+.contact .right form .fields {
+  display: flex;
+  flex-direction: column;
+}
+.contact .right form .field .mat-form-field:nth-child(1) {
+  margin-right: 10px;
+  width: 100%;
+}
+.contact .right form .field .mat-form-field:nth-child(2) {
+  width: 100%;
+}
+.contact .right form .fields .mat-form-field textarea {
+  overflow: hidden;
+  height: 80%;
+  width: 100%;
+  resize: none;
+}
+.contact .right form .button {
+  height: 47px;
+  width: 170px;
+}
+.contact .right form .button button {
+  width: 100%;
+  height: 100%;
+  border: 2px solid crimson;
+  background: crimson;
+  color: #fff;
+  outline: none;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.contact .right form .button button:hover {
+  color: crimson;
+  background: none;
+}
+@media (max-width: 500px) {
+  .contact .right form .field {
+    flex-direction: column;
+  }
+  .contact .right form .name,
+  .contact .right form .email {
+    margin: 0px;
+  }
+  .contact .contact-content .info .sub-title {
+    font-size: 13.5px;
+  }
+}
+@media (max-width: 320px) {
+  .contact .contact-content .info .sub-title {
+    font-size: 12px;
+  }
+}
+@media (max-width: 280px) {
+  .contact .title::after {
+    font-size: 19px;
+  }
+}
